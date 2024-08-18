@@ -195,6 +195,7 @@ class HomeScreen extends StatelessWidget {
                                             Image.network(
                                               featureData[index]['p_img'][0],
                                               width: 160,
+                                              height: 120,
                                               fit: BoxFit.cover,
                                             ).box.roundedSM.clip(Clip.antiAlias).make(),
                                             5.heightBox,
@@ -304,6 +305,7 @@ class HomeScreen extends StatelessWidget {
                                       Image.network(
                                         allproductdata[index]['p_img'][0],
                                         width: 200,
+                                        height: 120,
                                         fit: BoxFit.cover,
                                       ).box.roundedSM.clip(Clip.antiAlias).make(),
                                       10.heightBox,
