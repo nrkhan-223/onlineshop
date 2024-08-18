@@ -10,7 +10,7 @@ import 'item_details.dart';
 class CategoriesDetails extends StatefulWidget {
   final String title;
 
-  const CategoriesDetails({Key? key, required this.title}) : super(key: key);
+  const CategoriesDetails({super.key, required this.title});
 
   @override
   State<CategoriesDetails> createState() => _CategoriesDetailsState();
@@ -31,21 +31,24 @@ class _CategoriesDetailsState extends State<CategoriesDetails> {
       productMethod = FireStoreServices.getProduct(title);
     }
   }
-
   var controller = Get.find<ProductController>();
   dynamic productMethod;
 
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: () async {
-        controller.resetValue2();
-        return true;
+
+    return PopScope(
+      canPop: true,
+      onPopInvokedWithResult: (bool didPop, Object? result) async {
+        if (didPop) {
+          controller.resetValue2();
+          return;
+        }
       },
       child: bgCommon(
           child: Scaffold(
         appBar: AppBar(
-          title: widget.title.text.fontFamily(bold).make(),
+          title: widget.title.text.fontFamily(bold).white.make(),
         ),
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -59,23 +62,27 @@ class _CategoriesDetailsState extends State<CategoriesDetails> {
                     (index) => "${controller.subcat[index]}"
                             .text
                             .size(12)
+                            .maxLines(1)
                             .fontFamily(semibold)
                             .color(fontGrey)
                             .makeCentered()
-                            .box.outerShadowLg
-                            .color(controller.rowColor.value==index?Colors.yellow:Colors.white)
-                            .size(110, 55)
+                            .box
+                            .outerShadowLg
+                            .color(controller.rowColor.value == index
+                                ? Colors.yellow
+                                : Colors.white)
+                            .height(44)
+                            .padding(const EdgeInsets.symmetric(horizontal: 10))
                             .rounded
                             .margin(const EdgeInsets.symmetric(horizontal: 4))
                             .make()
                             .onTap(() {
-                              controller.changeRowColor(index);
+                          controller.changeRowColor(index);
                           switchCategory("${controller.subcat[index]}");
                           setState(() {});
-                          VxToast.show(context, msg:"${controller.subcat[index]}");
-
-                        }
-                        )),
+                          VxToast.show(context,
+                              msg: "${controller.subcat[index]}");
+                        })),
               ),
             ),
             50.heightBox,
@@ -139,13 +146,13 @@ class _CategoriesDetailsState extends State<CategoriesDetails> {
                                         .make()
                                   ],
                                 ),
-                                10.heightBox
                               ],
                             )
                                 .box
                                 .white
                                 .outerShadowMd
-                                .margin(const EdgeInsets.symmetric(horizontal: 5))
+                                .margin(
+                                    const EdgeInsets.symmetric(horizontal: 5))
                                 .roundedSM
                                 .padding(const EdgeInsets.all(10))
                                 .make()

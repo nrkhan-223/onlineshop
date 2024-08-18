@@ -7,7 +7,7 @@ import '../../consts/list.dart';
 import 'categories_details.dart';
 
 class CategoriesScreen extends StatelessWidget {
-  const CategoriesScreen({Key? key}) : super(key: key);
+  const CategoriesScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -53,6 +53,7 @@ class CategoriesScreen extends StatelessWidget {
                   .padding(const EdgeInsets.all(10))
                   .make()
                   .onTap(() {
+                VxToast.show(context, msg: "All products if available");
                 controller.getSubCategories(categoriesList[index]);
                 Get.to(() => CategoriesDetails(title: categoriesList[index]));
               });

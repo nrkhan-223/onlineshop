@@ -284,12 +284,15 @@ class ItemDetails extends StatelessWidget {
                         .color(darkFontGrey)
                         .make(),
                     10.heightBox,
-                    "${productdetail['p_descriptions']} "
-                        .text
-                        .size(14.5)
-                        .fontFamily(semibold)
-                        .color(darkFontGrey)
-                        .make(),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 5-.0),
+                      child: "${productdetail['p_descriptions']} "
+                          .text
+                          .size(14.5)
+                          .fontFamily(semibold)
+                          .color(darkFontGrey)
+                          .make(),
+                    ),
                     10.heightBox,
                     ListView(
                       physics: const NeverScrollableScrollPhysics(),
