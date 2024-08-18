@@ -1,25 +1,32 @@
-import 'package:online_app/controller/product_controller.dart';
-import 'package:online_app/views/chat_screen/chat_screen.dart';
 import 'package:get/get.dart';
 import '../../common_design/common_button.dart';
 import '../../consts/consts.dart';
 import '../../consts/list.dart';
+import '../../controller/product_controller.dart';
+import '../chat_screen/chat_screen.dart';
 
 class ItemDetails extends StatelessWidget {
   final String title;
   final dynamic productdetail;
 
-  const ItemDetails({Key? key, required this.title, this.productdetail})
-      : super(key: key);
+  const ItemDetails({super.key, required this.title, this.productdetail});
 
   @override
   Widget build(BuildContext context) {
     var controller = Get.find<ProductController>();
-    return WillPopScope(
-      onWillPop: () async {
-        controller.resetValue();
-        return true;
+    return PopScope(
+      canPop: true,
+      onPopInvokedWithResult: (bool didPop, Object? result) async {
+        if (didPop) {
+          controller.resetValue();
+          return;
+        }
       },
+
+      //     () async {
+      //   controller.resetValue();
+      //   return true;
+      // },
       child: Scaffold(
         backgroundColor: lightGrey,
         appBar: AppBar(
@@ -65,7 +72,6 @@ class ItemDetails extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-
                     VxSwiper.builder(
                         enlargeCenterPage: true,
                         height: 340,
@@ -78,11 +84,7 @@ class ItemDetails extends StatelessWidget {
                             productdetail['p_img'][index],
                             width: double.infinity,
                             fit: BoxFit.cover,
-                          ).box
-                              .roundedSM
-                              .clip(Clip.antiAlias)
-
-                              .make();
+                          ).box.roundedSM.clip(Clip.antiAlias).make();
                         }),
                     15.heightBox,
                     title.text
@@ -105,7 +107,8 @@ class ItemDetails extends StatelessWidget {
                     10.heightBox,
                     Row(
                       children: [
-                        "\$".text.semiBold.size(18).make(),2.widthBox,
+                        "\$".text.semiBold.size(18).make(),
+                        2.widthBox,
                         "${productdetail['p_price']}"
                             .numCurrency
                             .text
@@ -324,7 +327,7 @@ class ItemDetails extends StatelessWidget {
                                 fit: BoxFit.cover,
                               ),
                               5.heightBox,
-                              "fpjpjpije"
+                              "test product"
                                   .text
                                   .fontFamily(semibold)
                                   .color(darkFontGrey)
@@ -339,7 +342,7 @@ class ItemDetails extends StatelessWidget {
                             ],
                           )
                               .box
-                              .height(190)
+                              .height(context.screenHeight*0.23)
                               .white
                               .margin(const EdgeInsets.symmetric(horizontal: 5))
                               .roundedSM
@@ -353,7 +356,7 @@ class ItemDetails extends StatelessWidget {
               ),
             )),
             SizedBox(
-              width: double.infinity,
+              width: context.screenWidth*0.95,
               height: 60,
               child: commonButton(
                   color: redColor,
@@ -376,7 +379,8 @@ class ItemDetails extends StatelessWidget {
                       VxToast.show(context, msg: "Added To Cart");
                     }
                   }),
-            )
+            ),
+            10.heightBox
           ],
         ),
       ),

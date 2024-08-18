@@ -1,10 +1,10 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:online_app/common_design/loading_design.dart';
-import 'package:online_app/controller/product_controller.dart';
-import 'package:online_app/services/fiirestore_services.dart';
 import 'package:get/get.dart';
 import '../../common_design/bg_common.dart';
+import '../../common_design/loading_design.dart';
 import '../../consts/consts.dart';
+import '../../controller/product_controller.dart';
+import '../../services/fiirestore_services.dart';
 import 'item_details.dart';
 
 class CategoriesDetails extends StatefulWidget {

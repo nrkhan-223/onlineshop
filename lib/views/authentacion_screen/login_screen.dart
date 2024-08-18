@@ -1,4 +1,4 @@
-import 'package:online_app/views/authentacion_screen/signup_screen.dart';
+import 'package:onlineshop/views/authentacion_screen/signup_screen.dart';
 import 'package:get/get.dart';
 import '../../common_design/applogo_design.dart';
 import '../../common_design/bg_common.dart';

@@ -1,10 +1,10 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
-import 'package:online_app/common_design/loading_design.dart';
-import 'package:online_app/consts/consts.dart';
-import 'package:online_app/services/fiirestore_services.dart';
-import 'package:online_app/views/chat_screen/chat_screen.dart';
+import 'package:onlineshop/common_design/loading_design.dart';
+import 'package:onlineshop/consts/consts.dart';
+import 'package:onlineshop/services/fiirestore_services.dart';
+import 'package:onlineshop/views/chat_screen/chat_screen.dart';
 
 class MessageScreen extends StatelessWidget {
   const MessageScreen({Key? key}) : super(key: key);

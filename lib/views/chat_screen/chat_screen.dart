@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:online_app/common_design/loading_design.dart';
-import 'package:online_app/services/fiirestore_services.dart';
+import 'package:onlineshop/common_design/loading_design.dart';
+import 'package:onlineshop/services/fiirestore_services.dart';
 import 'package:get/get.dart';
 import '../../consts/consts.dart';
 import '../../controller/chat_controller.dart';

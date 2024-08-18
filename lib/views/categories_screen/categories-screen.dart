@@ -1,4 +1,4 @@
-import 'package:online_app/controller/product_controller.dart';
+import 'package:onlineshop/controller/product_controller.dart';
 import 'package:get/get.dart';
 
 import '../../common_design/bg_common.dart';

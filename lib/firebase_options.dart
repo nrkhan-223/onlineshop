@@ -48,17 +48,17 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyCx3aG-MbHvOVxDGdLlX4XRsDAl_Hh3mms',
-    appId: '1:759102557567:web:ee019b29d25287685dde4a',
+    appId: '1:759102557567:web:145b7543f7879d0e5dde4a',
     messagingSenderId: '759102557567',
     projectId: 'online-shop-12a47',
     authDomain: 'online-shop-12a47.firebaseapp.com',
     storageBucket: 'online-shop-12a47.appspot.com',
-    measurementId: 'G-RS9ELRWM8Z',
+    measurementId: 'G-79J8825N3B',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyAX-tB8jy8yPsLWLV2QGRNbomCFbv4Q_TM',
-    appId: '1:759102557567:android:d39713ada7c10fcf5dde4a',
+    appId: '1:759102557567:android:fe5e0bfcc1aa30a05dde4a',
     messagingSenderId: '759102557567',
     projectId: 'online-shop-12a47',
     storageBucket: 'online-shop-12a47.appspot.com',
@@ -66,11 +66,12 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyDlPsKxvwdO_Ny4qylQf9VOFVSz0_jxAuE',
-    appId: '1:759102557567:ios:5f5bcf1c19fb005b5dde4a',
+    appId: '1:759102557567:ios:150ab10079e013b55dde4a',
     messagingSenderId: '759102557567',
     projectId: 'online-shop-12a47',
     storageBucket: 'online-shop-12a47.appspot.com',
     iosClientId: '759102557567-p22smj7k26r397ba08icq2m9kume42mb.apps.googleusercontent.com',
     iosBundleId: 'com.example.onlineshop',
   );
+
 }

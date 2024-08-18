@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_instance/get_instance.dart';
 import 'package:get/get_navigation/get_navigation.dart';
-import 'package:online_app/views/account_screen/profile_edit.dart';
+import 'package:onlineshop/views/account_screen/profile_edit.dart';
 import '../../common_design/bg_common.dart';
 import '../../common_design/loading_design.dart';
 import '../../consts/consts.dart';

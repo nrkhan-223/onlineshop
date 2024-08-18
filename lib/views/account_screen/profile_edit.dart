@@ -1,8 +1,8 @@
 import 'dart:io';
-import 'package:online_app/common_design/bg_common.dart';
-import 'package:online_app/common_design/common_button.dart';
-import 'package:online_app/common_design/common_textfild.dart';
-import 'package:online_app/views/account_screen/account_screen.dart';
+import 'package:onlineshop/common_design/bg_common.dart';
+import 'package:onlineshop/common_design/common_button.dart';
+import 'package:onlineshop/common_design/common_textfild.dart';
+import 'package:onlineshop/views/account_screen/account_screen.dart';
 import 'package:get/get.dart';
 import '../../consts/consts.dart';
 import '../../controller/profile_controller.dart';

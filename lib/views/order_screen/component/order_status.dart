@@ -1,4 +1,4 @@
-import 'package:online_app/consts/consts.dart';
+import 'package:onlineshop/consts/consts.dart';
 
 Widget orderStatus({icon, color, String? title, showDone,}) {
   return ListTile(

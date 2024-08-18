@@ -1,7 +1,6 @@
 import 'package:get/get.dart';
-import 'package:online_app/views/categories_screen/categories_details.dart';
-
 import '../consts/consts.dart';
+import '../views/categories_screen/categories_details.dart';
 
 Widget featureButton({String? title, icon}) {
   return Row(

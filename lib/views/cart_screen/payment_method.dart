@@ -1,7 +1,7 @@
-import 'package:online_app/common_design/loading_design.dart';
-import 'package:online_app/consts/list.dart';
-import 'package:online_app/controller/cart_controller.dart';
-import 'package:online_app/views/home_screen/home.dart';
+import 'package:onlineshop/common_design/loading_design.dart';
+import 'package:onlineshop/consts/list.dart';
+import 'package:onlineshop/controller/cart_controller.dart';
+import 'package:onlineshop/views/home_screen/home.dart';
 import 'package:get/get.dart';
 import '../../common_design/common_button.dart';
 import '../../consts/consts.dart';

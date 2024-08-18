@@ -1,8 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/get.dart';
-import 'package:online_app/controller/home_controler.dart';
-import 'package:online_app/views/categories_screen/item_details.dart';
-import 'package:online_app/views/home_screen/search_screen.dart';
+import 'package:onlineshop/controller/home_controler.dart';
+import 'package:onlineshop/views/categories_screen/item_details.dart';
+import 'package:onlineshop/views/home_screen/search_screen.dart';
 import '../../common_design/common_button2.dart';
 import '../../common_design/feature_button.dart';
 import '../../common_design/loading_design.dart';

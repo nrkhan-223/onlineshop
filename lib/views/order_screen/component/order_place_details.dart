@@ -1,4 +1,4 @@
-import 'package:online_app/consts/consts.dart';
+import 'package:onlineshop/consts/consts.dart';
 
 Widget orderPlaceDetails(
     {  title1,  title2, d1, d2}) {

@@ -1,5 +1,5 @@
-import 'package:online_app/views/order_screen/component/order_place_details.dart';
-import 'package:online_app/views/order_screen/component/order_status.dart';
+import 'package:onlineshop/views/order_screen/component/order_place_details.dart';
+import 'package:onlineshop/views/order_screen/component/order_status.dart';
 import 'package:intl/intl.dart' as intl;
 import '../../consts/consts.dart';
 

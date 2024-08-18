@@ -1,4 +1,4 @@
-import 'package:online_app/common_design/exit_dialog.dart';
+import 'package:onlineshop/common_design/exit_dialog.dart';
 import 'package:get/get.dart';
 
 import '../../consts/consts.dart';

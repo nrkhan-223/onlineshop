@@ -7,7 +7,7 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:759102557567:android:d39713ada7c10fcf5dde4a",
+        "mobilesdk_app_id": "1:759102557567:android:fe5e0bfcc1aa30a05dde4a",
         "android_client_info": {
           "package_name": "com.example.onlineshop"
         }
@@ -43,9 +43,9 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:759102557567:android:33bd60370dc16f2b5dde4a",
+        "mobilesdk_app_id": "1:759102557567:android:bbf9b37e6b3aaa055dde4a",
         "android_client_info": {
-          "package_name": "com.example.seller_app"
+          "package_name": "com.example.selerapp"
         }
       },
       "oauth_client": [

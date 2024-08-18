@@ -1,4 +1,4 @@
-import 'package:online_app/views/home_screen/home.dart';
+import 'package:onlineshop/views/home_screen/home.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
 import '../common_design/applogo_design.dart';

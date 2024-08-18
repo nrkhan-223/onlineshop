@@ -1,8 +1,8 @@
-import 'package:online_app/common_design/common_button.dart';
-import 'package:online_app/common_design/common_textfild.dart';
-import 'package:online_app/consts/consts.dart';
-import 'package:online_app/controller/cart_controller.dart';
-import 'package:online_app/views/cart_screen/payment_method.dart';
+import 'package:onlineshop/common_design/common_button.dart';
+import 'package:onlineshop/common_design/common_textfild.dart';
+import 'package:onlineshop/consts/consts.dart';
+import 'package:onlineshop/controller/cart_controller.dart';
+import 'package:onlineshop/views/cart_screen/payment_method.dart';
 import 'package:get/get.dart';
 
 class ShippingDetails extends StatelessWidget {
